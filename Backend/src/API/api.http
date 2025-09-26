@@ -1,3 +1,31 @@
 
 ###
-GET http://localhost:5166/games
+GET http://localhost:5168/games
+
+
+###
+GET http://localhost:5168/games/585d475f-e82d-48bb-bf1a-be3717f70c7b
+
+
+###
+POST http://localhost:5168/games
+Content-Type: application/json
+
+{
+  "name": "",
+  "genre": "Action",
+  "price": 30.00,
+  "releaseDate": "2025-09-26"
+}
+
+
+###
+PUT http://localhost:5168/games/8b70c74f-1365-403a-9c16-d9fccef24aaf
+Content-Type: application/json
+
+{
+  "name": "GTA V",
+  "genre": "Action",
+  "price": 30.00,
+  "releaseDate": "2025-09-26"
+}
