@@ -4,7 +4,7 @@ GET http://localhost:5168/games
 
 
 ###
-GET http://localhost:5168/games/585d475f-e82d-48bb-bf1a-be3717f70c7b
+GET http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
 
 
 ###
@@ -12,23 +12,29 @@ POST http://localhost:5168/games
 Content-Type: application/json
 
 {
-  "name": "",
-  "genre": "Action",
+  "name": "Hhshhj",
+  "description": "Hjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhj",
+  "genreId": "f7f5c0c9-b5c7-4f0d-a5c5-f7f5c0c9b5c8",
   "price": 30.00,
   "releaseDate": "2025-09-26"
 }
 
 
 ###
-PUT http://localhost:5168/games/8b70c74f-1365-403a-9c16-d9fccef24aaf
+PUT http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
 Content-Type: application/json
 
 {
   "name": "GTA V",
-  "genre": "Action",
+  "description": "Hjhjhjhjhjhjhjhjhjhjhjh dsf",
+  "genreId": "f7f5c0c9-b5c7-4f0d-a5c5-f7f5c0c9b5c8",
   "price": 30.00,
   "releaseDate": "2025-09-26"
 }
 
 ###
-DELETE http://localhost:5168/games/947c198f-5fc6-4e65-8ca0-49155f717ce9
+DELETE http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
+
+
+###
+GET http://localhost:5168/genres
