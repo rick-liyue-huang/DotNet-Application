@@ -4,7 +4,7 @@ GET http://localhost:5168/games
 
 
 ###
-GET http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
+GET http://localhost:5168/games/5F28F15A-4478-4722-9F4A-A48A525687A8
 
 
 ###
@@ -12,28 +12,28 @@ POST http://localhost:5168/games
 Content-Type: application/json
 
 {
-  "name": "Hhshhj",
-  "description": "Hjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhj",
-  "genreId": "f7f5c0c9-b5c7-4f0d-a5c5-f7f5c0c9b5c8",
-  "price": 30.00,
-  "releaseDate": "2025-09-26"
+  "name": "Seven Game",
+  "description": "Seven Description",
+  "genreId": "DA17B694-1D3E-41D8-BDEE-0EF42B5A749C",
+  "price": 120.00,
+  "releaseDate": "2015-06-06"
 }
 
 
 ###
-PUT http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
+PUT http://localhost:5168/games/5F28F15A-4478-4722-9F4A-A48A525687A8
 Content-Type: application/json
 
 {
   "name": "GTA V",
   "description": "Hjhjhjhjhjhjhjhjhjhjhjh dsf",
-  "genreId": "f7f5c0c9-b5c7-4f0d-a5c5-f7f5c0c9b5c8",
+  "genreId": "DA17B694-1D3E-41D8-BDEE-0EF42B5A749C",
   "price": 30.00,
   "releaseDate": "2025-09-26"
 }
 
 ###
-DELETE http://localhost:5168/games/c5948789-4a90-4058-af21-62f986445828
+DELETE http://localhost:5168/games/5F28F15A-4478-4722-9F4A-A48A525687A8
 
 
 ###

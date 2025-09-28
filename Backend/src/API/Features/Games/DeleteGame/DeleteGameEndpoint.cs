@@ -1,24 +1,21 @@
-using System;
 using API.Data;
-using API.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Features.Games.DeleteGame;
 
 public static class DeleteGameEndpoint
 {
-    public static void MapDeleteGame(this IEndpointRouteBuilder app, GameStoreData data)
+    public static void MapDeleteGame(this IEndpointRouteBuilder app)
     { 
-      app.MapDelete("/{id}", (Guid id) =>
+      app.MapDelete("/{id}", (
+        Guid id,
+        // GameStoreData data
+        GameStoreContext gameStoreContext
+        ) =>
       {
-        // Game? game = games.FirstOrDefault(g => g.Id == id);
-        Game? game = data.GetGameById(id);
-        if (game is null)
-        {
-          return Results.NotFound();
-        }
-
-        // games.Remove(game);
-        data.RemoveGame(id);
+        // data.RemoveGame(id);
+        gameStoreContext.Games.Where(g => g.Id == id).ExecuteDelete();
+        gameStoreContext.SaveChanges();
         return Results.NoContent();
       });
     }

@@ -46,3 +46,44 @@ csharpapp.MapGet("/games/{id}", (Guid id) => games.Find(g => g.Id == id));
 
 3:-
 dotnet add package Microsoft.AspNetCore.Mvc.Core
+
+
+Transient: 每次请求都创建新实例，适合无状态或独立的对象。
+Scoped: 在同一作用域内重用实例，适合 HTTP 请求或特定上下文。
+Singleton: 全局唯一实例，适合共享状态或资源，但需注意线程安全。
+
+
+EF---------
+
+
+// dotnet-ef from nuget.org : dotnet tool install --global dotnet-ef
+// dotnet ef migrations add InitialCreate --output-dir Data/Migrations
+// dotnet ef migrations add InitialCreate
+// dotnet ef database update
+
+
+// docker pull postgres
+// docker run --name restaurantconnection -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+// docker ps -a
+// docker logs <containerId>
+
+这是项目代码中的链接字符串
+Host=localhost;Port=5432;Database=NewRestaurantDb;Username=postgres;Password=mysecretpassword
+
+这是实际的数据库中查看数据的连接字符串
+jdbc:postgresql://localhost:5432/NewRestaurantDb?user=postgres&password=mysecretpassword
+
+另外需要注意的是：
+这个项目中包括了不同的子项目: API, Infrastructure, Domain, Application,
+
+并且 Infrastructure 依赖于 Domain, 并且 数据库的连接也是在这里，因此需要先导航到这里再运行 dotnet ef migrations add xxx,
+并且链接数据库 dotnet ef database update的操作需要回到 主程序 API/program中运行 dotnet run 以后才可以操作。
+
+Domain -> Application -> API
+Domain -> Application -> Infrastructure
+Infrastructure -> API
+
+
+
+
+dotnet tool install --global dotnet-ef

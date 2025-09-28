@@ -6,22 +6,28 @@ namespace API.Features.Games.GetGameById;
 
 public static class GetGameByIdEndpoint
 {
-  public static void MapGetGameById(this IEndpointRouteBuilder app, GameStoreData data)
+  public static void MapGetGameById(this IEndpointRouteBuilder app/*, GameStoreData data*/)
   {
-    app.MapGet("/{id}", (Guid id) =>
+    app.MapGet("/{id}",
+    (
+      // GameStoreData data,
+      GameStoreContext gameStoreContext,
+      Guid id) =>
     {
-    // Game? game = games.FirstOrDefault(g => g.Id == id);
-      Game? game = data.GetGameById(id);
-        return game is null ? Results.NotFound() : Results.Ok(
-          new GameDetailsDto(
-            game.Id,
-            game.Name,
-            game.Description,
-            game.Genre.Id,
-            game.Price,
-            game.ReleaseDate
-          )
-        );
-      }).WithName(EndpointNames.GetNameEndpointName);
+      // Game? game = games.FirstOrDefault(g => g.Id == id);
+      // Game? game = data.GetGameById(id);
+      Game? game = gameStoreContext.Games.Find(id);
+      
+      return game is null ? Results.NotFound() : Results.Ok(
+        new GameDetailsDto(
+          game.Id,
+          game.Name,
+          game.Description,
+          game.GenreId,
+          game.Price,
+          game.ReleaseDate
+        )
+      );
+    }).WithName(EndpointNames.GetNameEndpointName);
   }
 }

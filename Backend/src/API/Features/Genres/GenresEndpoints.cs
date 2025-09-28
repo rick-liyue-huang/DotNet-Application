@@ -5,12 +5,12 @@ namespace API.Features.Genres
 {
     public static class GenresEndpoints
     {
-      public static void MapGenresEndpoints(this IEndpointRouteBuilder app, GameStoreData data)
+      public static void MapGenresEndpoints(this IEndpointRouteBuilder app/*, GameStoreData data*/)
       {
 
         var group = app.MapGroup("/genres");
         // GET /genres
-        group.MapGetGenres(data);
+        group.MapGetGenres();
       }
     }
 }

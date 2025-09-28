@@ -39,6 +39,7 @@ public class GameStoreData
         Name = "The Witcher 3",
         Description = "The Witcher is an action-adventure RPG set in a world where merpeople, dragons, and other fantastic beasts roam the world. You play Geralt of Rivia, a monster slayer who travels the world in search of a child who has been turned into a monster by a cruel sorcerer.",
         Genre = _genres[0],
+        GenreId = _genres[0].Id,
         Price = 19.99m,
         ReleaseDate = DateOnly.FromDateTime(DateTime.Now)
       },
@@ -48,6 +49,7 @@ public class GameStoreData
         Name = "Red Dead Redemption 2",
         Description = "Red Dead Redemption 2 is an action-adventure game set in a world where the main character, Arthur Morgan, is a member of the Van der Linde gang. He must deal with the other members of the gang, the authorities, and the elements of the game world.",
         Genre = _genres[3],
+        GenreId = _genres[0].Id,
         Price = 29.99m,
         ReleaseDate = DateOnly.FromDateTime(DateTime.Now)
       },
@@ -57,6 +59,7 @@ public class GameStoreData
         Name = "The Elder Scrolls V: Skyrim",
         Description = "The Elder Scrolls V: Skyrim is an action-adventure game set in a world where the main character, player character, is a werewolf. He must deal with the other members of the werewolf pack, the authorities, and the elements of the game world.",
         Genre = _genres[2],
+        GenreId = _genres[0].Id,
         Price = 59.99m,
         ReleaseDate = DateOnly.FromDateTime(DateTime.Now)
       },
@@ -65,6 +68,7 @@ public class GameStoreData
         Name = "Fallout 4",
         Description = "Fallout 4 is an action-adventure game set in a world where the main character, player character, is a werewolf. He must deal with the other members of the werewolf pack, the authorities, and the elements of the game world.",
         Genre = _genres[1],
+        GenreId = _genres[0].Id,
         Price = 39.99m,
         ReleaseDate = DateOnly.FromDateTime(DateTime.Now)
       }

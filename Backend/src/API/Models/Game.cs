@@ -9,7 +9,9 @@ public class Game
 
     public required string Description { get; set; } = string.Empty;
 
-    public required Genre Genre { get; set; }
+    public Genre? Genre { get; set; }
+
+    public Guid GenreId { get; set; }
 
     public decimal Price { get; set; }
     public DateOnly ReleaseDate { get; set; }
