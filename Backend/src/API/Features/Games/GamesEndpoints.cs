@@ -1,6 +1,6 @@
 using System;
 using API.Data;
-using API.Features.Games.CreateGameEndpoint;
+using API.Features.Games.CreateGame;
 using API.Features.Games.DeleteGame;
 using API.Features.Games.GetGameById;
 using API.Features.Games.GetGames;

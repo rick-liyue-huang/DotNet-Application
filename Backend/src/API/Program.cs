@@ -27,6 +27,6 @@ app.MapGamesEndpoints();
 // group all endpoints in /genres
 app.MapGenresEndpoints();
 
-app.InitialDb();
+await app.InitialDbAsync();
 
 app.Run();

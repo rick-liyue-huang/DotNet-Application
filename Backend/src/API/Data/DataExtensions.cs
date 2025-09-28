@@ -6,21 +6,22 @@ namespace API.Data;
 public static class DataExtensions
 {
 
-  public static void InitialDb(this WebApplication app)
+  public static async Task InitialDbAsync(this WebApplication app)
   {
-    app.MigrateDb();
-    app.SeedDb();
+    await app.MigrateDbAsync();
+    await app.SeedDbAsync();
   }
 
   // use to replace with 'dotnet ef database update'
-  private static void MigrateDb(this WebApplication app)
+  private static async Task MigrateDbAsync(this WebApplication app)
   {
     using var scope = app.Services.CreateScope();
     GameStoreContext dbContext = scope.ServiceProvider.GetRequiredService<GameStoreContext>();
-    dbContext.Database.Migrate();
+    // dbContext.Database.Migrate();
+    await dbContext.Database.MigrateAsync();
   }
 
-  private static void SeedDb(this WebApplication app)
+  private static async Task SeedDbAsync(this WebApplication app)
   {
     using var scope = app.Services.CreateScope();
     GameStoreContext dbContext = scope.ServiceProvider.GetRequiredService<GameStoreContext>();
@@ -34,7 +35,7 @@ public static class DataExtensions
         new Genre() { Name = "Sports" },
         new Genre() { Name = "Strategy" }
       );
-      dbContext.SaveChanges();
+      await dbContext.SaveChangesAsync();
     }
 
     if (!dbContext.Games.Any())

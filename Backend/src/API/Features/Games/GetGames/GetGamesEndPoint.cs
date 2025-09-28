@@ -7,12 +7,12 @@ public static class GetGamesEndPoint
 {
     public static void MapGetGames(this IEndpointRouteBuilder app/*, GameStoreData data*/)
     {
-      app.MapGet("/", (
+      app.MapGet("/", async (
         // GameStoreData data
         GameStoreContext gameStoreContext
         ) => {
         return Results.Ok(
-          /*data.GetGames()*/gameStoreContext.Games
+          await /*data.GetGames()*/gameStoreContext.Games
           .Include(game => game.Genre)
           .Select(game => new GameSummaryDto(
             game.Id,
@@ -20,7 +20,7 @@ public static class GetGamesEndPoint
             game.Genre!.Name,
             game.Price,
             game.ReleaseDate
-          )).AsNoTracking()
+          )).AsNoTracking().ToListAsync()
         );
       });
     }

@@ -1,15 +1,16 @@
 using API.Data;
 using API.Features.Games.Constants;
+using API.Features.Games.CreateGameEndpoint;
 using API.Models;
 
-namespace API.Features.Games.CreateGameEndpoint;
+namespace API.Features.Games.CreateGame;
 
 public static class CreateGameEndpoints
 {
   public static void MapCreateGame(this IEndpointRouteBuilder app/*, GameStoreData data*/)
   { 
     app.MapPost("/",
-    (
+    async (
       CreateGameDto gameDto,
       // GameStoreData data,
       GameStoreContext gameStoreContext,
@@ -36,7 +37,7 @@ public static class CreateGameEndpoints
         // data.AddGame(game);
         gameStoreContext.Games.Add(game);
         logger.PrintGames();
-        gameStoreContext.SaveChanges();
+        await gameStoreContext.SaveChangesAsync();
 
         // return Results.Created($"/games/{game.Id}", game);
         return Results.CreatedAtRoute(EndpointNames.GetNameEndpointName, new { id = game.Id }, new GameDetailsDto(
