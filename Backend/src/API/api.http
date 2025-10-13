@@ -1,0 +1,35 @@
+
+###
+GET http://localhost:5666/games
+
+
+
+###
+GET http://localhost:5666/games/479b60bc-d427-4eab-9cda-5fcad1d320b8 
+
+
+
+###
+POST http://localhost:5666/games
+Content-Type: application/json
+
+{
+  "Name": "",
+  "Genre": "Test Description",
+  "Price": 10000.99,
+  "ReleaseDate": "2021-01-01"
+}
+
+###
+PUT http://localhost:5666/games/3197b275-d607-4d15-a86b-f0d588af7003
+Content-Type: application/json
+
+{
+  "Name": "Update",
+  "Genre": "uPDAE Description",
+  "Price": 100.99,
+  "ReleaseDate": "2021-11-11"
+}
+
+### 
+DELETE http://localhost:5666/games/39c302eb-14a7-4f44-b797-d5fec53345a1
