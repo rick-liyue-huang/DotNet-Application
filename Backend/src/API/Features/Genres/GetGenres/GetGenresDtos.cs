@@ -1,6 +1,6 @@
 using System;
 
-namespace API.Dtos;
+namespace API.Features.Genres.GetGenres;
 
 public record GenreDto(
   Guid Id,

@@ -2,12 +2,8 @@
 ###
 GET http://localhost:5666/games
 
-
-
 ###
-GET http://localhost:5666/games/34c691bb-b983-4cb7-a0c1-06db990685d6
-
-
+GET http://localhost:5666/games/11663ebc-f65a-4c86-bb64-47d37d4b8d7b
 
 ###
 POST http://localhost:5666/games
@@ -16,13 +12,13 @@ Content-Type: application/json
 {
   "Name": "New One",
   "Description": "New Game Description",
-  "GenreId": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+  "GenreId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
   "Price": 100.99,
   "ReleaseDate": "2021-01-01"
 }
 
 ###
-PUT http://localhost:5666/games/a19b4f68-69aa-4dfd-b0e5-c55ed3135d7d
+PUT http://localhost:5666/games/11663ebc-f65a-4c86-bb64-47d37d4b8d7b
 Content-Type: application/json
 
 {
@@ -34,8 +30,7 @@ Content-Type: application/json
 }
 
 ### 
-DELETE http://localhost:5666/games/b9c0390a-8cf0-47e5-9080-179e8e7e5d55
-
+DELETE http://localhost:5666/games/11663ebc-f65a-4c86-bb64-47d37d4b8d7b
 
 
 ###
