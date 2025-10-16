@@ -6,14 +6,18 @@ using API.Features.Genres;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddSingleton<GameDataLogger>();
+builder.Services.AddSingleton<GameStoreData>();
+
 var app = builder.Build();
 
 const string GetGameEndpointName = nameof(GetGameEndpointName);
 
-GameStoreData data = new();
+// GameStoreData data = new();
 
-app.MapGames(data);
+app.MapGames();
 
-app.MapGenres(data);
+app.MapGenres(); //remove data
 
 app.Run();

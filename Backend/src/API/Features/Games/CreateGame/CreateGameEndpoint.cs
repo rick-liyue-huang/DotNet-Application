@@ -7,9 +7,9 @@ namespace API.Features.Games.CreateGame;
 
 public static class CreateGameEndpoint
 {
-  public static void MapCreateGame(this IEndpointRouteBuilder app, GameStoreData data)
+  public static void MapCreateGame(this IEndpointRouteBuilder app)
   {
-    app.MapPost("/", (CreateGameDto gameDto) =>
+    app.MapPost("/", (CreateGameDto gameDto, GameStoreData data, GameDataLogger logger) =>
     {
       var genre = data.GetGenreById(gameDto.GenreId);
 
@@ -28,6 +28,7 @@ public static class CreateGameEndpoint
         Description = gameDto.Description
       };
       data.AddGame(game);
+      logger.PrintGames();
 
       return Results.CreatedAtRoute(GameConstant.GetGameEndpointName, new { id = game.Id }, new GameDetailsDto(
         game.Id,
