@@ -1,0 +1,30 @@
+[
+  {
+    "id": "e10a7661-c09c-4cb1-a4f8-cf314cfe7d36",
+    "name": "Red Dead Redemption 2",
+    "genre": "Action-Adventure",
+    "price": 59.99,
+    "releaseDate": "2018-10-26"
+  },
+  {
+    "id": "1270e2bc-28a2-4212-859f-f0f49de6b84b",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03"
+  },
+  {
+    "id": "65b04235-cb1d-4d84-bba3-5fdff7567007",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 0,
+    "releaseDate": "2011-11-18"
+  },
+  {
+    "id": "be836849-20a9-41bc-abc2-ed2a2e02107c",
+    "name": "Fortnite",
+    "genre": "Battle Royal",
+    "price": 0,
+    "releaseDate": "2017-07-17"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "b471fe3d-de1b-47f2-b0b7-32eed2f55bca",
+    "name": "The Witcher 3",
+    "genre": "RPG",
+    "price": 59.99,
+    "releaseDate": "2015-05-19"
+  },
+  {
+    "id": "aa969fd3-917f-43a0-8396-55a6c772fab7",
+    "name": "Red Dead Redemption 2",
+    "genre": "Action-Adventure",
+    "price": 59.99,
+    "releaseDate": "2018-10-26"
+  },
+  {
+    "id": "98665d17-f49d-4036-a3e0-564c6e22dc99",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03"
+  },
+  {
+    "id": "48020720-625e-4fd9-8f1c-810708ef104e",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 0,
+    "releaseDate": "2011-11-18"
+  },
+  {
+    "id": "5fd85f13-4c9b-423f-b72e-ee80614c96ce",
+    "name": "Fortnite",
+    "genre": "Battle Royal",
+    "price": 0,
+    "releaseDate": "2017-07-17"
+  }
+]

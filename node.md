@@ -124,3 +124,7 @@ await app.InitialDbAsync();
 
 app.Run();
 ```
+
+
+MinimalApis.Extensions 需要额外安装：支持 [Required][StringLength()]... ,
+并且需要加入 route(xxx).WithParameterValidation();
