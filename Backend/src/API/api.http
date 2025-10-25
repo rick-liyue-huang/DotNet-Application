@@ -3,7 +3,7 @@
 GET http://localhost:5096/games
 
 ###
-GET http://localhost:5096/games/48020720-625e-4fd9-8f1c-810708ef104e
+GET http://localhost:5096/games/29aa8774-8c51-4d71-b855-a8645500a8c2
 
 
 ###
@@ -12,9 +12,10 @@ Content-Type: application/json
 
 {
   "name": "New Game",
-  "genre": "Adventure",
+  "genreId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
   "releaseDate": "2024-07-01",
-  "price": 120.00
+  "price": 120.00,
+  "description": "New Game Description"
 }
 
 
@@ -26,8 +27,12 @@ Content-Type: application/json
   "name": "Updated Game Name",
   "genre": "Action",
   "releaseDate": "2024-08-01",
-  "price": 150.00
+  "price": 150.00,
+  "description": "Updated Game Description"
 }
 
 ###
 DELETE http://localhost:5096/games/6f4c20ca-b446-4c24-b10a-e4de31fd5630
+
+###
+GET http://localhost:5096/genres

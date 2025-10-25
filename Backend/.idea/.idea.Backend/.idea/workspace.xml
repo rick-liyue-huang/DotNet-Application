@@ -9,76 +9,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50693a9-965e-4952-bbd8-75d16b0e40e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Backend.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Data/GameDataLogger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Data/GameStoreData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/Constants/GameConstant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/CreateGame/CreateGameDtos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/CreateGame/CreateGameEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/DeleteGame/DeleteGameEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/GamesEndpoints.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/GetGameById/GetGameByIdDtos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/GetGameById/GetGameByIdEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/GetGames/GetGamesDtos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/GetGames/GetGamesEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/UpdateGame/UpdateGameDtos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Games/UpdateGame/UpdateGameEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Genres/GenresEndpoints.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Genres/GetGenres/GetGenresDtos.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Features/Genres/GetGenres/GetGenresEndpoint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Models/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Models/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Models/Genre.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/api.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/Microsoft.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/MiniValidation.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/bin/Debug/net9.0/MinimalApis.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.csproj.Up2Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/API.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/ref/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/ref/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/refint/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/Debug/net9.0/refint/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Backend/.idea/httpRequests/http-requests-log.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="34V5jDKblXzHFPnb1UUV792v2Ro" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -86,9 +38,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.API: http.executor": "Run",
+    "HTTP Request.api | #1.executor": "Run",
+    "HTTP Request.api | #2.executor": "Run",
+    "HTTP Request.api | #3.executor": "Run",
+    "HTTP Request.api | #4.executor": "Run",
+    "HTTP Request.api | #5.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -101,7 +60,39 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="api | #1" value="STOPPED" />
+              <entry key="api | #2" value="STOPPED" />
+              <entry key="api | #3" value="STOPPED" />
+              <entry key="api | #4" value="STOPPED" />
+              <entry key="api | #5" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.API: http">
+    <configuration name="api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/API/api.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/API/api.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/API/api.http" executionIdentifier="#3" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/API/api.http" executionIdentifier="#4" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="api | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/API/api.http" executionIdentifier="#5" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/API/API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -134,6 +125,15 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.api | #1" />
+        <item itemvalue="HTTP Request.api | #5" />
+        <item itemvalue="HTTP Request.api | #4" />
+        <item itemvalue="HTTP Request.api | #3" />
+        <item itemvalue="HTTP Request.api | #2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -143,12 +143,14 @@
       <option name="presentableId" value="Default" />
       <updated>1761286033102</updated>
       <workItem from="1761286035428" duration="899000" />
+      <workItem from="1761286965012" duration="8286000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

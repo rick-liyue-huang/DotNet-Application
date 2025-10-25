@@ -1,3 +1,12 @@
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-24T225241.200.json
+
+###
+
 DELETE http://localhost:5096/games/6f4c20ca-b446-4c24-b10a-e4de31fd5630
 User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
 Accept-Encoding: br, deflate, gzip, x-gzip
