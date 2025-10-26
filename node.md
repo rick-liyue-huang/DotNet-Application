@@ -164,3 +164,38 @@ DIP 在以下场景中非常常见：
 数据库访问：业务逻辑依赖 IRepository 接口，而不是具体的 SqlRepository 或 MongoRepository。
 通知服务：发送通知的代码依赖 INotificationService，可以切换为 EmailNotificationService 或 SmsNotificationService。
 支付系统：支付逻辑依赖 IPaymentProcessor，支持 PayPalProcessor 或 StripeProcessor。
+
+
+
+333
+
+Up: 前进，应用新的数据库更改（创建、修改）。
+Down: 后退，撤销更改以恢复到上一个迁移状态。
+一致性: Down 方法必须能够完全撤销 Up 方法的操作，确保迁移可逆。
+数据库安全: 在生产环境中，执行 Down 方法要谨慎，因为它可能删除数据（例如，DropTable 会删除表及其数据）。
+迁移顺序: EF Core 按迁移文件的创建时间戳（存储在 __EFMigrationsHistory 表中）按顺序执行 Up 或 Down。
+
+模型快照（Snapshot） 是一个记录 EF Core 数据模型当前状态的 C# 文件，包含实体、属性、关系和配置的完整定义。
+作用: 作为模型变更检测的基准，帮助 EF Core 生成增量迁移文件。
+
+
+AsNoTracking() 的作用:
+
+禁用 EF Core 的变更跟踪，使查询返回的实体不被 DbContext 跟踪，优化内存和性能。
+适合只读场景，尤其是返回 DTO 的查询。
+
+
+在代码中的意义:
+
+在 GetGamesEndpoint 中，AsNoTracking() 优化了查询游戏列表的性能，因为结果被投影为 GameSummaryDto，无需跟踪实体。
+结合 Include 和 Select，它确保高效加载和返回游戏数据。
+
+
+好处:
+
+减少内存占用，提升查询速度，适合 API 的 GET 请求。
+
+
+限制:
+
+不适合需要更新实体的场景，需谨慎选择使用。

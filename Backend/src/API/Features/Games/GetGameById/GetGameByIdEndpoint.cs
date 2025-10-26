@@ -9,9 +9,15 @@ public static class GetGameByIdEndpoint
 {
     public static void MapGetGameById(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/{id}", (Guid id, GameStoreData data) =>
+        app.MapGet("/{id}", 
+            (
+                Guid id, 
+                // GameStoreData data
+                GameStoreContext DbContext
+                ) =>
         {
-            Game? game = data.GetGame(id);
+            // Game? game = data.GetGame(id);
+            Game? game = DbContext.Games.Find(id);
 
             if (game == null)
             {
@@ -22,7 +28,7 @@ public static class GetGameByIdEndpoint
                 new GameDetailsDto(
                     game.Id,
                     game.Name,
-                    game.Genre.Id,
+                    game.GenreId,
                     game.Price,
                     game.ReleaseDate,
                     game.Description

@@ -12,7 +12,7 @@ public class Game
   public required string Name { get; set; } = string.Empty;
 
   // [Required][StringLength(100)]
-  public required Genre Genre { get; set; }
+  public Genre? Genre { get; set; }
 
   // [Range(0, 10000)]
   public decimal Price { get; set; }
@@ -20,4 +20,6 @@ public class Game
   public DateOnly ReleaseDate { get; set; }
 
   public required string Description { get; set; } = string.Empty;
+
+  public Guid GenreId { get; set; }
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "22f8020e-bbec-45dc-96fc-1546ac9bd16e",
+    "name": "RPG"
+  },
+  {
+    "id": "6949ce07-4a1d-49ea-b59f-66cc9f8e474b",
+    "name": "Sandbox"
+  },
+  {
+    "id": "bf060be4-be8f-450d-a048-6b4548c358db",
+    "name": "Battle Royal"
+  },
+  {
+    "id": "c36ce9bd-834e-4b7f-b89e-8094d22cb743",
+    "name": "Adventure"
+  },
+  {
+    "id": "c62d604b-5fc9-498d-a7a5-446e236e2eda",
+    "name": "Action"
+  }
+]

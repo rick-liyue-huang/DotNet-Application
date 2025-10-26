@@ -1,5 +1,7 @@
 using API.Models;
 
+// will be useless after we have a database
+
 namespace API.Data;
 
 public class GameStoreData
@@ -44,6 +46,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "The Witcher 3",
                 Genre = _genres[2],
+                GenreId = _genres[2].Id,
                 Price = 59.99M,
                 ReleaseDate = DateOnly.FromDateTime(new DateTime(2015, 5, 19)),
                 Description =
@@ -54,6 +57,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Red Dead Redemption 2",
                 Genre = _genres[0],
+                GenreId = _genres[0].Id,
                 Price = 59.99M,
                 ReleaseDate = DateOnly.FromDateTime(new DateTime(2018, 10, 26)),
                 Description =
@@ -64,6 +68,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "The Legend of Zelda: Breath of the Wild",
                 Genre = _genres[1],
+                GenreId = _genres[1].Id,
                 Price = 59.99M,
                 ReleaseDate = DateOnly.FromDateTime(new DateTime(2017, 3, 3)),
                 Description =
@@ -74,6 +79,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Minecraft",
                 Genre = _genres[3],
+                GenreId = _genres[3].Id,
                 Price = 0,
                 ReleaseDate = DateOnly.FromDateTime(new DateTime(2011, 11, 18)),
                 Description = "Minecraft is a sandbox video game developed by Mojang Studios and published by Mojang Studios."
@@ -83,6 +89,7 @@ public class GameStoreData
                 Id = Guid.NewGuid(),
                 Name = "Fortnite",
                 Genre = _genres[4],
+                GenreId = _genres[4].Id,
                 Price = 0,
                 ReleaseDate = DateOnly.FromDateTime(new DateTime(2017, 7, 17)),
                 Description =

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "89f5c3d7-e5fc-4c4e-a2a7-05ae893c4e7d",
+    "name": "First Game",
+    "genre": "Action",
+    "price": 120.0,
+    "releaseDate": "2024-07-01",
+    "description": "First Game Description"
+  },
+  {
+    "id": "f4ee4693-505d-41cc-bb4f-1d9a48e256bb",
+    "name": "Updated Game Name",
+    "genre": "Battle Royal",
+    "price": 150.0,
+    "releaseDate": "2024-08-01",
+    "description": "Updated Game Description"
+  },
+  {
+    "id": "e4e3519d-6459-4c22-b60e-d1ba548ae1f8",
+    "name": "Third Game",
+    "genre": "RPG",
+    "price": 320.0,
+    "releaseDate": "2024-07-01",
+    "description": "Third Game Description"
+  }
+]

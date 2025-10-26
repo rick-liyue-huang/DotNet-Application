@@ -1,3 +1,293 @@
+GET http://localhost:5096/games/e4e3519d-6459-4c22-b60e-d1ba548ae1f8
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T220950.200.json
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T220937.200.json
+
+###
+
+GET http://localhost:5096/games/A8FE784B-4FC0-44EE-AA23-0952AFF37D09
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T220928.200.json
+
+###
+
+GET http://localhost:5096/genres
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T220219.200.json
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T215637.200.json
+
+###
+
+DELETE http://localhost:5096/games/89F5C3D7-E5FC-4C4E-A2A7-05AE893C4E7D
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T215122.200.json
+
+###
+
+PUT http://localhost:5096/games/F4EE4693-505D-41CC-BB4F-1D9A48E256BB
+Content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated Game Name",
+  "genreId": "BF060BE4-BE8F-450D-A048-6B4548C358DB",
+  "releaseDate": "2024-08-01",
+  "price": 150.00,
+  "description": "Updated Game Description"
+}
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 172
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Third Game",
+  "genreId": "22F8020E-BBEC-45DC-96FC-1546AC9BD16E",
+  "releaseDate": "2024-07-01",
+  "price": 320.00,
+  "description": "Third Game Description"
+}
+
+<> 2025-10-26T214242.201.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 174
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Second Game",
+  "genreId": "C36CE9BD-834E-4B7F-B89E-8094D22CB743",
+  "releaseDate": "2024-07-01",
+  "price": 220.00,
+  "description": "Second Game Description"
+}
+
+<> 2025-10-26T214216.201.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 172
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "First Game",
+  "genreId": "C62D604B-5FC9-498D-A7A5-446E236E2EDA",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "First Game Description"
+}
+
+<> 2025-10-26T214149.201.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 173
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "First Game",
+  "genreId": "8C62D604B-5FC9-498D-A7A5-446E236E2EDA",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "First Game Description"
+}
+
+<> 2025-10-26T214107.400.txt
+
+###
+
+PUT http://localhost:5096/games/A8FE784B-4FC0-44EE-AA23-0952AFF37D09
+Content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated Game Name",
+  "genreId": "22F8020E-BBEC-45DC-96FC-1546AC9BD16E",
+  "releaseDate": "2024-08-01",
+  "price": 150.00,
+  "description": "Updated Game Description"
+}
+
+###
+
+PUT http://localhost:5096/games/A8FE784B-4FC0-44EE-AA23-0952AFF37D09
+Content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated Game Name",
+  "genreId": "22F8020E-BBEC-45DC-96FC-1546AC9BD16E",
+  "releaseDate": "2024-08-01",
+  "price": 150.00,
+  "description": "Updated Game Description"
+}
+
+###
+
+GET http://localhost:5096/games/A8FE784B-4FC0-44EE-AA23-0952AFF37D09
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T213312.200.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 172
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Third Game",
+  "genreId": "8C879F64-4141-4252-98F9-B8C707F073CF",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "Third Game Description"
+}
+
+<> 2025-10-26T212634.201.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 174
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Second Game",
+  "genreId": "E7FE2D6A-37B1-488B-81BD-E26A00928E61",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "Second Game Description"
+}
+
+<> 2025-10-26T212603.201.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 172
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "First Game",
+  "genreId": "33ACC772-BF32-452F-AB2C-AE95345F4BD6",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "First Game Description"
+}
+
+<> 2025-10-26T212510.201.json
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-26T212408.200.json
+
+###
+
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 168
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "New Game",
+  "genreId": "8f6b3c1f-4e2a-4b3c-9d7e-3f2a1b4c5d6e",
+  "releaseDate": "2024-07-01",
+  "price": 120.00,
+  "description": "New Game Description"
+}
+
+<> 2025-10-26T160254.201.json
+
+###
+
 POST http://localhost:5096/games
 Content-Type: application/json
 Content-Length: 168
@@ -304,228 +594,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2025-10-26T141337.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141327.200.json
-
-###
-
-DELETE http://localhost:5096/games/f3cb37ba-82c4-41af-b3da-073404dd764e
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-DELETE http://localhost:5096/games/a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141248.200.json
-
-###
-
-PUT http://localhost:5096/games/f3cb37ba-82c4-41af-b3da-073404dd764e
-Content-Type: application/json
-Content-Length: 181
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Updated Game Name",
-  "genreId": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
-  "releaseDate": "2024-08-01",
-  "price": 150.00,
-  "description": "Updated Game Description"
-}
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141204.200.json
-
-###
-
-POST http://localhost:5096/games
-Content-Type: application/json
-Content-Length: 168
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "New Game",
-  "genreId": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
-  "releaseDate": "2024-07-01",
-  "price": 120.00,
-  "description": "New Game Description"
-}
-
-<> 2025-10-26T141200.201.json
-
-###
-
-GET http://localhost:5096/genres
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141144.200.json
-
-###
-
-GET http://localhost:5096/games/f3cb37ba-82c4-41af-b3da-073404dd764e
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141136.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T141118.200.json
-
-###
-
-GET http://localhost:5096/games/1c91eff5-51db-4309-865f-62b3eaa53b32
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T135632.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T135617.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T133709.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T130425.200.json
-
-###
-
-DELETE http://localhost:5096/games/f0f779d0-40c0-44ac-ad78-4dd170164cbb
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T130400.200.json
-
-###
-
-PUT http://localhost:5096/games/f0f779d0-40c0-44ac-ad78-4dd170164cbb
-Content-Type: application/json
-Content-Length: 181
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Updated Game Name",
-  "genreId": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
-  "releaseDate": "2024-08-01",
-  "price": 150.00,
-  "description": "Updated Game Description"
-}
-
-###
-
-GET http://localhost:5096/genres
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T130338.200.json
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T130319.200.json
-
-###
-
-POST http://localhost:5096/games
-Content-Type: application/json
-Content-Length: 168
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "New Game",
-  "genreId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-  "releaseDate": "2024-07-01",
-  "price": 120.00,
-  "description": "New Game Description"
-}
-
-<> 2025-10-26T130314.201.json
-
-###
-
-GET http://localhost:5096/games/f0f779d0-40c0-44ac-ad78-4dd170164cbb
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T130307.200.json
 
 ###
 
