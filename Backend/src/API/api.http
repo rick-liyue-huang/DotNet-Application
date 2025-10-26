@@ -3,7 +3,7 @@
 GET http://localhost:5096/games
 
 ###
-GET http://localhost:5096/games/f5841fc9-18a9-4276-a464-350650d069f1
+GET http://localhost:5096/games/8a09909d-39c1-4db8-a031-dfe193b8e2d9
 
 
 ###
@@ -12,7 +12,7 @@ Content-Type: application/json
 
 {
   "name": "New Game",
-  "genreId": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+  "genreId": "8f6b3c1f-4e2a-4b3c-9d7e-3f2a1b4c5d6e",
   "releaseDate": "2024-07-01",
   "price": 120.00,
   "description": "New Game Description"
@@ -20,19 +20,19 @@ Content-Type: application/json
 
 
 ###
-PUT http://localhost:5096/games/f5841fc9-18a9-4276-a464-350650d069f1
+PUT http://localhost:5096/games/8a09909d-39c1-4db8-a031-dfe193b8e2d9
 Content-Type: application/json
 
 {
   "name": "Updated Game Name",
-  "genreId": "a1b2c3d4-5e6f-7a8b-9c0d-e1f2a3b4c5d6",
+  "genreId": "8f6b3c1f-4e2a-4b3c-9d7e-3f2a1b4c5d6e",
   "releaseDate": "2024-08-01",
   "price": 150.00,
   "description": "Updated Game Description"
 }
 
 ###
-DELETE http://localhost:5096/games/f5841fc9-18a9-4276-a464-350650d069f1
+DELETE http://localhost:5096/games/8a09909d-39c1-4db8-a031-dfe193b8e2d9
 
 ###
 GET http://localhost:5096/genres

@@ -130,3 +130,37 @@ MinimalApis.Extensions 需要额外安装：支持 [Required][StringLength()]...
 并且需要加入 route(xxx).WithParameterValidation();
 
 DTO is the contract between the client and the server.
+#
+
+
+#####################################
+
+为什么这个案例符合 DIP？
+
+高层模块不依赖低层模块：
+
+Logger（高层模块）不直接依赖 FileLogWriter 或 DatabaseLogWriter（低层模块），而是依赖抽象接口 ILogWriter。
+这使得 Logger 不关心具体的日志记录方式。
+
+
+抽象不依赖细节，细节依赖抽象：
+
+ILogWriter 接口是抽象的，不包含任何具体实现细节。
+具体实现（如 FileLogWriter、DatabaseLogWriter）依赖于 ILogWriter 接口，通过实现接口来提供功能。
+
+
+好处：
+
+可扩展性：新增日志方式（如 CloudLogWriter）只需实现 ILogWriter，无需修改 Logger。
+可测试性：在单元测试中，可以注入一个模拟的 ILogWriter（如使用 Moq 框架）来测试 Logger 的行为。
+解耦：通过接口隔离，Logger 和具体的日志实现之间没有直接依赖。
+
+
+
+
+实际应用场景
+DIP 在以下场景中非常常见：
+
+数据库访问：业务逻辑依赖 IRepository 接口，而不是具体的 SqlRepository 或 MongoRepository。
+通知服务：发送通知的代码依赖 INotificationService，可以切换为 EmailNotificationService 或 SmsNotificationService。
+支付系统：支付逻辑依赖 IPaymentProcessor，支持 PayPalProcessor 或 StripeProcessor。

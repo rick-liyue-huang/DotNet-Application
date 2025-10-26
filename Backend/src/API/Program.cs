@@ -5,15 +5,20 @@ using API.Features.Genres;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<GameStoreData>();
+builder.Services.AddTransient<GameDataLogger>();
+
 var app = builder.Build();
 
-GameStoreData data = new();
+
+// GameStoreData data = new();
 
 // app.MapGet("/", () => "Hello World!");
 
-app.MapGamesEndpoints(data);
+app.MapGamesEndpoints(); // dismiss data
 
-app.MapGenresEndpoints(data);
+app.MapGenresEndpoints();
 
 
 app.Run();

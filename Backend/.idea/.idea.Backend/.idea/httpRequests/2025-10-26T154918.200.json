@@ -1,0 +1,50 @@
+[
+  {
+    "id": "322072ab-787b-4c55-aec6-04804f3f6d69",
+    "name": "The Witcher 3",
+    "genre": "RPG",
+    "price": 59.99,
+    "releaseDate": "2015-05-19",
+    "description": "The Witcher 3 is a 2015 action-adventure game developed by CD Projekt Red and published by CD Projekt Red."
+  },
+  {
+    "id": "8a09909d-39c1-4db8-a031-dfe193b8e2d9",
+    "name": "Updated Game Name",
+    "genre": "Sandbox",
+    "price": 150.00,
+    "releaseDate": "2024-08-01",
+    "description": "Updated Game Description"
+  },
+  {
+    "id": "8cd1708f-a140-4bcb-8a34-1930df85b868",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03",
+    "description": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed by Nintendo and published by Nintendo."
+  },
+  {
+    "id": "46da6b95-cdb4-45be-ac29-4f65d94a43ff",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 0,
+    "releaseDate": "2011-11-18",
+    "description": "Minecraft is a sandbox video game developed by Mojang Studios and published by Mojang Studios."
+  },
+  {
+    "id": "5a972c2b-2135-4f5a-975b-747efd404e6c",
+    "name": "Fortnite",
+    "genre": "Battle Royal",
+    "price": 0,
+    "releaseDate": "2017-07-17",
+    "description": "Fortnite is a multiplayer online battle royale video game developed by Epic Games and published by Epic Games."
+  },
+  {
+    "id": "78141dd1-6e1e-4620-9cfd-bbfb6172b6fe",
+    "name": "New Game",
+    "genre": "Sandbox",
+    "price": 120.00,
+    "releaseDate": "2024-07-01",
+    "description": "New Game Description"
+  }
+]

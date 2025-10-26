@@ -5,9 +5,9 @@ namespace API.Features.Games.UpdateGameById;
 
 public static class UpdateGameByIdEndpoint
 {
-    public static void MapUpdateGameById(this IEndpointRouteBuilder app, GameStoreData data)
+    public static void MapUpdateGameById(this IEndpointRouteBuilder app)
     {
-        app.MapPut("/{id}", (Guid id, UpdateGameDto gameDto) =>
+        app.MapPut("/{id}", (Guid id, UpdateGameDto gameDto, GameStoreData data) =>
         {
 
             var genre = data.GetGenre(gameDto.GenreId);
