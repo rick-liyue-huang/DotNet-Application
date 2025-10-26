@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0f53efb9-28e2-4529-bc76-78a76279c3ec",
+    "name": "Red Dead Redemption 2",
+    "genre": "Action-Adventure",
+    "price": 59.99,
+    "releaseDate": "2018-10-26",
+    "description": "Red Dead Redemption 2 is a 2018 action-adventure game developed by Rockstar North and published by Rockstar Games."
+  },
+  {
+    "id": "b9af398c-4db9-44b0-b6d6-a46e3defcb57",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03",
+    "description": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed by Nintendo and published by Nintendo."
+  },
+  {
+    "id": "930b8e31-e2b1-4c49-aa5f-39047360105b",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 0,
+    "releaseDate": "2011-11-18",
+    "description": "Minecraft is a sandbox video game developed by Mojang Studios and published by Mojang Studios."
+  },
+  {
+    "id": "19ad9f9d-dd5d-4f14-a8b6-77f2b25da682",
+    "name": "Fortnite",
+    "genre": "Battle Royal",
+    "price": 0,
+    "releaseDate": "2017-07-17",
+    "description": "Fortnite is a multiplayer online battle royale video game developed by Epic Games and published by Epic Games."
+  },
+  {
+    "id": "49a6a3e7-e0c8-4705-b608-dff53407119f",
+    "name": "New Game",
+    "genre": "Action-Adventure",
+    "price": 120.00,
+    "releaseDate": "2024-07-01",
+    "description": "New Game Description"
+  }
+]

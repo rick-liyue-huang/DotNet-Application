@@ -1,0 +1,42 @@
+[
+  {
+    "id": "140ab8a0-08eb-444b-ab7e-b9b986eb8fe5",
+    "name": "The Witcher 3",
+    "genre": "RPG",
+    "price": 59.99,
+    "releaseDate": "2015-05-19",
+    "description": "The Witcher 3 is a 2015 action-adventure game developed by CD Projekt Red and published by CD Projekt Red."
+  },
+  {
+    "id": "5e926855-6409-49d4-b5a2-5ff495136293",
+    "name": "Red Dead Redemption 2",
+    "genre": "Action-Adventure",
+    "price": 59.99,
+    "releaseDate": "2018-10-26",
+    "description": "Red Dead Redemption 2 is a 2018 action-adventure game developed by Rockstar North and published by Rockstar Games."
+  },
+  {
+    "id": "49a86f3e-bd30-43ac-8893-67bcda9facd9",
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "genre": "Adventure",
+    "price": 59.99,
+    "releaseDate": "2017-03-03",
+    "description": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed by Nintendo and published by Nintendo."
+  },
+  {
+    "id": "6ae0afaf-8dd4-4b9d-a88c-28159bce88af",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "price": 0,
+    "releaseDate": "2011-11-18",
+    "description": "Minecraft is a sandbox video game developed by Mojang Studios and published by Mojang Studios."
+  },
+  {
+    "id": "b515c4be-a364-4c02-81b7-1438a58072ec",
+    "name": "Fortnite",
+    "genre": "Battle Royal",
+    "price": 0,
+    "releaseDate": "2017-07-17",
+    "description": "Fortnite is a multiplayer online battle royale video game developed by Epic Games and published by Epic Games."
+  }
+]
