@@ -5,20 +5,20 @@ namespace API.Data;
 
 public static class DataExtensions
 {
-    public static void InitializeDb(this WebApplication app)
+    public static async Task InitializeDbAsync(this WebApplication app)
     {
-        app.MigrateDb();
-        app.SeedDb();
+        await app.MigrateDbAsync();
+        await app.SeedDbAsync();
     }
-    private static void MigrateDb(this WebApplication app)
+    private static async Task MigrateDbAsync(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider.GetRequiredService<GameStoreContext>();
-        dbContext.Database.Migrate(); // will create the database similar as `dotnet ef database update`
+        await dbContext.Database.MigrateAsync(); // will create the database similar as `dotnet ef database update`
     }
 
 
-    private static void SeedDb(this WebApplication app)
+    private static async Task SeedDbAsync(this WebApplication app)
     {
         using var scope = app.Services.CreateScope();
         GameStoreContext dbContext = scope.ServiceProvider.GetRequiredService<GameStoreContext>();
@@ -46,7 +46,7 @@ public static class DataExtensions
                 {
                     Name = "Battle Royal"
                 });
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
         }
     }
 }

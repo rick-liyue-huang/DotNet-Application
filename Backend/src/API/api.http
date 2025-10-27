@@ -11,8 +11,8 @@ POST http://localhost:5096/games
 Content-Type: application/json
 
 {
-  "name": "New Game",
-  "genreId": "6949CE07-4A1D-49EA-B59F-66CC9F8E474B",
+  "name": "KK Game",
+  "genreId": "c62d604b-5fc9-498d-a7a5-446e236e2eda",
   "releaseDate": "2024-07-01",
   "price": 320.00,
   "description": "New Game Description"
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 
 ###
-PUT http://localhost:5096/games/F4EE4693-505D-41CC-BB4F-1D9A48E256BB
+PUT http://localhost:5096/games/fd4b4b4b-2c37-4dbf-9c65-7b06f8ea742d
 Content-Type: application/json
 
 {
@@ -32,7 +32,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5096/games/89F5C3D7-E5FC-4C4E-A2A7-05AE893C4E7D
+DELETE http://localhost:5096/games/fd4b4b4b-2c37-4dbf-9c65-7b06f8ea742d
 
 ###
 GET http://localhost:5096/genres

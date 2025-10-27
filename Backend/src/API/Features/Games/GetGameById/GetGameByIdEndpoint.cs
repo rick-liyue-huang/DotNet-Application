@@ -10,14 +10,14 @@ public static class GetGameByIdEndpoint
     public static void MapGetGameById(this IEndpointRouteBuilder app)
     {
         app.MapGet("/{id}", 
-            (
+            async (
                 Guid id, 
                 // GameStoreData data
                 GameStoreContext DbContext
                 ) =>
         {
             // Game? game = data.GetGame(id);
-            Game? game = DbContext.Games.Find(id);
+            Game? game = await DbContext.Games.FindAsync(id);
 
             if (game == null)
             {

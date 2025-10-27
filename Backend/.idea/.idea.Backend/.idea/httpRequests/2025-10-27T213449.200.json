@@ -1,0 +1,34 @@
+[
+  {
+    "id": "f4ee4693-505d-41cc-bb4f-1d9a48e256bb",
+    "name": "Updated Game Name",
+    "genre": "Battle Royal",
+    "price": 150.0,
+    "releaseDate": "2024-08-01",
+    "description": "Updated Game Description"
+  },
+  {
+    "id": "e4e3519d-6459-4c22-b60e-d1ba548ae1f8",
+    "name": "Third Game",
+    "genre": "RPG",
+    "price": 320.0,
+    "releaseDate": "2024-07-01",
+    "description": "Third Game Description"
+  },
+  {
+    "id": "c41ab5ac-fff8-454d-ad01-852f4098da9d",
+    "name": "New Game",
+    "genre": "Sandbox",
+    "price": 320.0,
+    "releaseDate": "2024-07-01",
+    "description": "New Game Description"
+  },
+  {
+    "id": "fd4b4b4b-2c37-4dbf-9c65-7b06f8ea742d",
+    "name": "KK Game",
+    "genre": "Action",
+    "price": 320.0,
+    "releaseDate": "2024-07-01",
+    "description": "New Game Description"
+  }
+]

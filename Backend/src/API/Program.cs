@@ -41,7 +41,7 @@ app.MapGamesEndpoints(); // dismiss data
 
 app.MapGenresEndpoints();
 
-app.InitializeDb();
+await app.InitializeDbAsync();
 
 
 app.Run();

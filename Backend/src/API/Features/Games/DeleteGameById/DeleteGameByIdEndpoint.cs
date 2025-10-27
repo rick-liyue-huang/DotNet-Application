@@ -9,7 +9,7 @@ public static class DeleteGameByIdEndpoint
     public static void MapDeleteGameById(this IEndpointRouteBuilder app)
     {
         app.MapDelete("/{id}", 
-            (
+            async (
                 Guid id, 
                 // GameStoreData data
                 GameStoreContext dbContext
@@ -24,7 +24,7 @@ public static class DeleteGameByIdEndpoint
 
             // data.RemoveGame(id);
             dbContext.Games.Where(game => game.Id == id).ExecuteDelete();
-            dbContext.SaveChanges();
+            await dbContext.SaveChangesAsync();
             
             return Results.NoContent();
         });
