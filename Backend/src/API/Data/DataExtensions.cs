@@ -9,6 +9,8 @@ public static class DataExtensions
     {
         await app.MigrateDbAsync();
         await app.SeedDbAsync();
+        
+        app.Logger.LogInformation(18, "Database is ready"); // LogError, LogWarning,
     }
     private static async Task MigrateDbAsync(this WebApplication app)
     {

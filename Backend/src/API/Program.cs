@@ -43,7 +43,6 @@ app.MapGenresEndpoints();
 
 await app.InitializeDbAsync();
 
-
 app.Run();
 
 

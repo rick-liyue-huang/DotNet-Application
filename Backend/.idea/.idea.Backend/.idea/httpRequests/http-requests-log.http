@@ -1,3 +1,31 @@
+POST http://localhost:5096/games
+Content-Type: application/json
+Content-Length: 166
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "PP Game",
+  "genreId": "c62d604b-5fc9-498d-a7a5-446e236e2eda",
+  "releaseDate": "2024-07-01",
+  "price": 320.00,
+  "description": "PP Game Description"
+}
+
+<> 2025-10-28T205751.201.json
+
+###
+
+GET http://localhost:5096/games
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-10-27T213528.200.json
+
+###
+
 DELETE http://localhost:5096/games/fd4b4b4b-2c37-4dbf-9c65-7b06f8ea742d
 User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -588,22 +616,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2025-10-26T154516.200.json
-
-###
-
-GET http://localhost:5096/games/296c8537-d808-4960-89e8-6085386429af
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:5096/games
-User-Agent: IntelliJ HTTP Client/JetBrains Rider 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-10-26T154437.200.json
 
 ###
 

@@ -12,8 +12,10 @@ public static class CreateGameEndpoint
             async (
                 CreateGameDto gameDto, 
                 // GameStoreData data,
-                GameStoreContext dbContext
+                GameStoreContext dbContext,
                 // GameDataLogger logger
+                ILoggerFactory loggerFactory,
+                ILogger<GameStoreData> logger
                 ) =>
         {
 
@@ -37,6 +39,9 @@ public static class CreateGameEndpoint
             // data.AddGame(game);
             dbContext.Games.Add(game);
             await dbContext.SaveChangesAsync();
+            
+            // var logger = loggerFactory.CreateLogger("Games");
+            logger.LogInformation("Game created: {GameName}", game.Name);
             
             // logger.PrintGames();
             
